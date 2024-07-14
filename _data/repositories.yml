@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - s-m-quadri
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - s-m-quadri/flavour-find
+  - s-m-quadri/draw-key
+  - s-m-quadri/diems
+  - s-m-quadri/qr-notes
+  - s-m-quadri/mindfit-ai
+  - s-m-quadri/ask-iot
+  - s-m-quadri/cyberus
