@@ -4,6 +4,11 @@
  ******************************************************************************/
 
 // Colors
+$primary: #7f6000;
+$on-primary: #ffe599;
+$secondary: #b28700;
+$on-secondary: #fff2cc;
+
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
@@ -32,7 +37,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($primary, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location
