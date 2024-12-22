@@ -3,20 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=https://s-m-quadri.gitlab.io/">
   <title>Redirecting...</title>
   <meta name="google-site-verification" content="2BssY5xK7TDZo4-zpNLd0P0pveZ8D5ywAjgtrZYrCks" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E26W2E63F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3E26W2E63F');
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      font-size: 1.5em;
+      color: #333;
+    }
+    p {
+      font-size: 1em;
+      color: #666;
+    }
+    .redirect-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .redirect-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3E26W2E63F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3E26W2E63F');
-</script>
 <body>
-  <p>If you are not redirected automatically, follow this <a href="https://s-m-quadri.gitlab.io/">link</a>.</p>
+  <div class="container">
+    <h1>Redirecting...</h1>
+    <p>You are being redirected in <span id="countdown">5</span> seconds.</p>
+    <a class="redirect-button" href="https://s-m-quadri.gitlab.io/">Redirect Now</a>
+  </div>
+  <script>
+    const redirectUrl = "https://s-m-quadri.gitlab.io/";
+    let countdown = 5;
+    const countdownElement = document.getElementById("countdown");
+
+    const countdownInterval = setInterval(() => {
+      countdown--;
+      countdownElement.textContent = countdown;
+
+      if (countdown <= 0) {
+        clearInterval(countdownInterval);
+        window.location.href = redirectUrl;
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
